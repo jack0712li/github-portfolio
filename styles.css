@@ -90,7 +90,7 @@ section {
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
-}
+  min-width: fit-content;}
 
 .section-container {
   display: flex;
@@ -333,6 +333,7 @@ section {
   width: calc(50% - 1rem); 
   max-width: 500px; 
   flex-grow: 1; 
+  min-width: 400px;
 }
 
 .project-image {
