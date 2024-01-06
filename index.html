@@ -1,66 +1,241 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>My Portfolio</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="mediaqueries.css" />
-  </head>
-  <body>
-    <nav id="desktop-nav">
-      <div class="logo">Shaoming Li</div>
-      <div>
-        <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <nav id="desktop-nav">
+    <div class="logo">Shaoming Li</div>
+    <div>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skill">Skill</a></li>
+        <li><a href="#professional">Professional</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <section id="profile">
+
+    <div class="section__text">
+      <p class="section__text__p1">Hello, I'm</p>
+      <h1 class="title">Shaoming Li</h1>
+      <p class="section__text__p2">Software Developer</p>
+      <div class="btn-container">
+        <button class="btn btn-color-2" onclick="window.open('./assets/Shaoming-Li-Resume.pdf')">
+          Download CV
+        </button>
+        <button class="btn btn-color-1" onclick="location.href='./#contact'">
+          Contact Info
+        </button>
+      </div>
+      <div id="socials-container">
+        <img src="./assets/linkedin2.png" alt="My LinkedIn profile" class="icon"
+          onclick="location.href='https://www.linkedin.com/in/shaoming-li-7024881ab/'" />
+        <img src="./assets/github.png" alt="My Github profile" class="icon"
+          onclick="location.href='https://github.com/jack0712li?tab=repositories'" />
+      </div>
+    </div>
+    <div class="section__pic-container">
+      <img src="./assets/profile-pic.png" alt="Shaoming Li profile picture" />
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about-container">
+      <h2>About Me</h2>
+      <p>As an emerging software engineer, my journey so far has been driven by a deep passion for technology and a
+        commitment to rapid learning. Starting with a foundation in actuarial science, I quickly pivoted to software
+        development, where I have diligently self-taught and gained proficiency in key technologies like Java, Spring
+        Boot, React.js, and MySQL.</p>
+      <p>This demonstrates my ability to adapt and thrive in new and challenging environments, reflecting my eagerness
+        to grow and contribute in the field of software engineering. My technical journey, although at its early stages,
+        includes a significant internship where I honed my skills in real-world applications.</p>
+      <p>I have worked on projects such as developing user-friendly interfaces for web applications and contributing to
+        the backend development of data management systems. These experiences have equipped me with a practical
+        understanding of software development, emphasizing both quality and efficiency in my work. Currently, as a
+        Master's student in Computer Science at Northeastern University, I am deepening my technical knowledge and
+        staying abreast of the latest trends in software engineering.</p>
+    </div>
+  </section>
+
+  <section id="skill">
+    <h2>Explore my skills</h2>
+    <div id="myskill">
+
+      <div class="skill-category">
+        <h3 class="skill-title">Programming Language</h3>
+        <div class="skills-list">
+          <span>Java</span>
+          <span>C/C++</span>
+          <span>JavaScript</span>
+          <span>Python</span>
+          <span>SQL</span>
+          <span>HTML5/CSS</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="skill-title">Development Tools</h3>
+        <div class="skills-list">
+          <span>Git</span>
+          <span>AWS</span>
+          <span>MySQL Workbench</span>
+          <span>Postman</span>
+          <span>Render</span>
+        </div>
+      </div>
+
+      <div class="skill-category">
+        <h3 class="skill-title">Technologies/Frameworks</h3>
+        <div class="skills-list">
+          <span>React</span>
+          <span>Redux</span>
+          <span>Node.js</span>
+          <span>Express.js</span>
+          <span>MongoDB</span>
+          <span>MySQL</span>
+          <span>Spring Boot</span>
+          <span>PostgreSQL</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="professional">
+    <div class="professional-container">
+      <h2>Professional Experience</h2>
+      <div class="experience-item">
+        <h3>Software Engineer Intern - IpserLab</h3>
+        <p><b>January 2024 - Current</b></p>
+        <ul>
+          <li>Led the development of a complex web application using JavaScript and React.js, enhancing user interfaces
+            and application functionality, resulting in a 30% increase in user engagement.</li>
+          <li>Managed full-cycle software development for key features, including a sophisticated analytics module,
+            which improved tracking accuracy by 25% and streamlined user engagement analysis.</li>
+          <li>Conducted extensive testing and debugging, identifying and resolving over 15 critical bugs, leading to a
+            20% improvement in website reliability and user experience.</li>
+          <li>Utilized advanced PostgreSQL techniques for database optimization, achieving a 10% increase in data
+            processing efficiency, and leveraged Git for efficient version control, supporting a team of 5 developers in
+            a fast-paced, collaborative environment.</li>
         </ul>
       </div>
-    </nav>
+    </div>
+  </section>
 
-    <section id="profile">
-
-      <div class="section__text">
-        <p class="section__text__p1">Hello, I'm</p>
-        <h1 class="title">Shaoming Li</h1>
-        <p class="section__text__p2">Frontend Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/resume-example.pdf')"
-          >
-            Download CV
+  <section id="projects">
+    <h2>My Project</h2>
+    <div class="project-card-container">
+      <div class="project-card">
+        <img src="./assets/project1-image.jpg" alt="Real Estate Web Project Image" class="project-image" />
+        <div class="project-details">
+          <h3>Real Estate Web</h3>
+          <p>October 2023 - December 2023</p>
+          <p>A full-stack project allowing buyers to bookmark properties and contact sellers, and enabling sellers to create property listings.</p>
+          <div class="skills-list">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>React</span>
+            <span>Node.js</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/jack0712li/Real-estate-app'">
+            Github Repo
           </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
+          <button class="btn btn-color-2" onclick="location.href='https://new-boston-estate.onrender.com/'">
+            Live Demo
           </button>
         </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="location.href='https://linkedin.com/'"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="location.href='https://github.com/'"
-          />
+      </div>
+      
+      <div class="project-card">
+        <img src="./assets/project2-image.jpg" alt="E-Commerce API Project Image" class="project-image" />
+        <div class="project-details">
+          <h3>E-Commerce API</h3>
+          <p>April 2023 - August 2023</p>
+          <p>A backend RESTful e-commerce platform offering seamless front-end integration and enhanced system scalability.</p>
+          <div class="skills-list">
+            <span>MongoDB</span>
+            <span>Express.js</span>
+            <span>Node.js</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/jack0712li/E-commerce-management-system'">
+            Github Repo
+          </button>
+          <button class="btn btn-color-2" onclick="location.href='https://nodejs-ecommerce-api-cxv5.onrender.com/'">
+            Live Demo
+          </button>
         </div>
       </div>
-      <div class="section__pic-container">
-        <img src="./assets/profile-pic.png" alt="Shaoming Li profile picture" />
+      
+      <div class="project-card">
+        <img src="./assets/coffee-delivery-database-system.jpg" alt="Coffee Delivery Database System Project Image" class="project-image" />
+        <div class="project-details">
+          <h3>Coffee Delivery Database System</h3>
+          <p>May 2023 - July 2023</p>
+          <p>Leveraging Python for backend server interactions with a MySQL database, executing complex SQL queries for efficient data management.</p>
+          <div class="skills-list">
+            <span>Python</span>
+            <span>MySQL</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/jack0712li/sql-project'">
+            Github Repo
+          </button>
+          
+        </div>
       </div>
-    </section>
+      
+      <div class="project-card">
+        <img src="./assets/shapes-photo-album-application.jpg" alt="Shapes Photo Album Application Project Image" class="project-image" />
+        <div class="project-details">
+          <h3>Shapes Photo Album Application</h3>
+          <p>January 2023 - April 2023</p>
+          <p>A Java-based application for shape manipulation and visualization, utilizing Java Swing for desktop and HTML/SVG for web interfaces.</p>
+          <div class="skills-list">
+            <span>Java</span>
+            <span>Swing</span>
+            <span>HTML</span>
+            <span>SVG</span>
+          </div>
+          <button class="btn btn-color-1" onclick="location.href='https://github.com/jack0712li/ShapesPhotoAlbum'">
+            Github Repo
+          </button>
+        </div>
+      </div>
+      
 
-    <footer>
+    </div>
 
-    </footer>
-    <script src="script.js"></script>
-  </body>
+
+  </section>
+
+
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="email">
+          <h3>Email</h3>
+          <p><a href="mailto:jack0712li@gmail.com">jack0712li@gmail.com</a></p>
+        </div>
+        <div class="linkedin">
+          <h3>LinkedIn</h3>
+          <p><a href="https://www.linkedin.com/in/shaoming-li-7024881ab/" target="_blank">LinkedIn Profile</a></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+</body>
+<footer>
+  <p>&copy; Copyright 2024 Shaoming Li</p>
+</footer>
 </html>
